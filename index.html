@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Notes</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <!--<a href="tts.html">Text to Speech</a>-->
+
+</head>
+<body>
+    <!--<h2>SPEXT</h1> <!-- Move the heading above the form -->
+    <h1>Take Notes by Speaking</h1> <!-- Move the heading above the form -->
+    <div class="container"> <!-- Add a container to center the form -->
+        <form id="noteForm" onsubmit="submitForm(event)">
+            <textarea id="noteInput" name="note" rows="4" cols="50" placeholder="Speak or type your notes"></textarea><br>
+            <button type="button" onclick="startSpeechRecognition()">Start Voice Input</button><br>
+            <button type="submit">Save Note</button>
+            <button type="button" onclick="saveAsTxt()">Save as .txt</button>
+        </form>
+    </div>
+    <!-- Navigation Links -->
+    <nav>
+      <a href="tts.html" class="nav-button">Text to speech</a> <!-- Link to speech-to-text page -->
+    </nav>
+
+    <!-- Include your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+ 
